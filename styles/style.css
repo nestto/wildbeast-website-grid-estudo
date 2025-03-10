@@ -7,6 +7,11 @@
 body {
   font-family: var(--fonte);
 }
+
+img {
+  border-radius: 5px;
+}
+
 /* GRID GERAL */
 
 .estrutura {
@@ -78,14 +83,53 @@ body {
   background: #dac4fc;
 }
 
+/* CONTEUDO */
+
 .content {
   grid-area: content;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
 }
+
+.col-wide {
+  grid-column: 1/-1;
+}
+
+.imagem-1 {
+  grid-row: span 2;
+  align-self: end;
+}
+
+.imagem-2 {
+  align-self: end;
+}
+
+/* ESTILO CONTENT */
+
+/* ANUNCIOS */
 
 .anuncios {
   grid-area: anuncios;
+  background: fafbfc;
+  display: grid;
+  align-content: start;
+  padding: 30px;
+  gap: 30px;
 }
+
+/* FOOTER */
 
 .footer {
   grid-area: footer;
+  background: linear-gradient(135deg, #8844ee, #b07dfb);
+}
+
+.footer p {
+  color: white;
+  text-align: center;
+  padding: 30px;
 }
