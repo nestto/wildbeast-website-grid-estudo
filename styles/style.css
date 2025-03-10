@@ -110,11 +110,114 @@ img {
 
 /* ESTILO CONTENT */
 
+p {
+  font-size: 1.2rem;
+  line-height: 1.4;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.informacoes p + p {
+  margin-top: 30px;
+}
+
+.titulo {
+  color: #b07dfb;
+}
+
+.titulo h1 {
+  font-size: 3.75rem;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.titulo span {
+  font-size: 0.875rem;
+  font-style: italic;
+}
+
+.caracteristicas {
+  display: flex;
+  align-items: flex-start;
+}
+
+.caracteristicas > div {
+  width: 80px;
+  text-align: center;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #8844ee, #b07dfb);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.caracteristicas > div:first-child {
+  margin-right: 30px;
+}
+
+.caracteristicas span {
+  color: #b07dfb;
+
+  display: block;
+}
+
+.numero {
+  color: #b07dfb;
+  font-size: 3rem;
+  line-height: 1;
+  margin: 10px auto;
+}
+
+.rotulo {
+  background: white;
+  border-radius: 0 0 5px 5px;
+  padding: 5px 0;
+  position: relative;
+  top: 2px;
+}
+
+.destaque {
+  font-size: 0.875rem;
+  color: #dac4fc;
+  max-width: 16rem;
+}
+
+.citacao {
+  grid-column: 1/-1;
+}
+
+.citacao,
+.atributos {
+  align-self: self-start;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(135deg, #8844ee, #b07dfb);
+}
+
+.citacao p {
+  font-size: 1.5rem;
+  font-style: italic;
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
+  color: white;
+}
+
+.atributos li {
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.125rem;
+  padding: 1rem;
+}
+
+.atributos li + li {
+  border-top: 2px solid #b07dfb;
+}
+
 /* ANUNCIOS */
 
 .anuncios {
   grid-area: anuncios;
-  background: fafbfc;
+  background: #fafbfc;
   display: grid;
   align-content: start;
   padding: 30px;
