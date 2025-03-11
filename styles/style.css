@@ -10,6 +10,7 @@ body {
 
 img {
   border-radius: 5px;
+  width: 100%;
 }
 
 /* GRID GERAL */
@@ -222,6 +223,7 @@ p {
   align-content: start;
   padding: 30px;
   gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 
 /* FOOTER */
@@ -310,5 +312,11 @@ p {
     right: 30px;
     color: rgba(0, 0, 0, 0.3);
     animation: seta 0.7s ease-in infinite alternate;
+  }
+}
+
+@media (max-width: 500px) {
+  .content {
+    grid-template-columns: auto;
   }
 }
